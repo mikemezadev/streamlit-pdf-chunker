@@ -1,7 +1,3 @@
-# 📚 PDF to Chunked Text Converter 🌟
-
-Easily extract text from PDF files and split it into smaller, manageable chunks for further processing or uploads.
-
 # 📚 PDF Chunker: PDF to Text Converter for Large PDFs
 
 ## 🔍 Overview
