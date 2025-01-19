@@ -28,7 +28,7 @@ If you want to run the app locally follow these steps:
 
 1. **Clone the repository** to your local machine:
    ```bash
-   git clone https://github.com/your-username/streamlit-pdf-chunker.git
+   git clone https://github.com/mikemezadev/streamlit-pdf-chunker.git
 
 2. **Install dependencies:**
    ```bash
@@ -40,7 +40,7 @@ If you want to run the app locally follow these steps:
 
 ## 🌐 Try It Online
 
-You can try the app online here: https://app-pdf-chunker-e4uwthecqms6eb3d4886b5.streamlit.app/
+[Try Now on Streamlit Community Cloud](https://app-pdf-chunker-e4uwthecqms6eb3d4886b5.streamlit.app/)
 
 ## 📩 Feedback and Contributions
 I welcome your feedback, issues, and contributions! Feel free to open an issue or submit a pull request.
