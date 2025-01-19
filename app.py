@@ -28,6 +28,9 @@ uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
 max_words = st.number_input("Set maximum words per chunk", min_value=1, value=400000, step=1000)
 
 if uploaded_file:
+    # Get the original file name without extension
+    original_filename = os.path.splitext(uploaded_file.name)[0]
+
     with st.spinner("Extracting text from PDF..."):
         try:
             text = extract_text_from_pdf(uploaded_file)
@@ -37,9 +40,9 @@ if uploaded_file:
             # Split text into chunks
             chunks = split_text(text, max_words)
 
-            # Provide download links for each chunk
+            # Provide download links for each chunk with original filename and chunk number
             for i, chunk in enumerate(chunks):
-                output_file = f"chunk_{i + 1}.txt"
+                output_file = f"{original_filename}_chunk_{i + 1}.txt"
                 with open(output_file, "w", encoding="utf-8") as f:
                     f.write(chunk)
                 st.download_button(
